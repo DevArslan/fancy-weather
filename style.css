@@ -1,0 +1,189 @@
+.wrapper {
+    font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 1200px;
+    max-width: 1440px;
+    border: 1px solid #ccc;
+    background-repeat-y: repeat;
+    position: relative;
+}
+p{
+    margin:0;
+    padding: 0;
+}
+.blackout{
+    background: rgba(0,0,0,0.5); 
+    position: absolute; 
+    top:0;
+    padding-left: 6.4%;
+    height: 100%;
+    width: 100%;
+}
+.settingsNav{
+    margin-top:2.7%;
+    min-height: 4%;
+    font-size: 1rem;
+    display: flex;
+    max-width: 16%;
+
+}
+.languageNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#ffffff;
+    margin-left: 5%;
+    flex-grow:3;
+    background-color: #AEB5B9;
+    font-weight: bold;
+}
+.languageNav > ul > li{
+    list-style: none;
+}
+
+.languageNav ul{
+
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+.languageNav.open ul{
+    display: block;
+
+}
+
+.refreshBG{
+    flex-grow: 1.989;
+   
+    background-color: #AEB5B9;
+    background-image:url('src/images/RefreshBG.png');
+    background-position:center;
+}
+.toggleTemp{
+    flex-grow: 3;
+    background-color: #AEB5B9;
+    margin-left: 5%;
+}
+
+.titleBlock{
+    color: #ffffff;
+    margin-top:5%;
+}
+.titleBlock-city{
+    
+    font-size: 44px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.titleBlock-date{
+    font-size: 24px;
+}
+
+.currentWeather{
+    display: flex;
+    
+    color: #ffffff;
+    align-items: flex-end;
+    text-transform: uppercase;
+
+}
+
+.currentWeather-temp{
+    font-size: 18.9rem;
+    margin:0;
+    font-weight: bold;
+}
+
+.currentWeatherOther-itemList{
+    list-style: none;
+    font-size: 1.4rem;
+}
+.currentWeatherOther{
+    margin-bottom: 38px;
+}
+
+.weatherTheOtherDay{
+    display: flex;
+    color:#ffffff;
+    justify-content: space-between;
+    width: 40%;
+}
+.weatherTheOtherDay-title{
+    font-size: 1.6rem;
+}
+.weatherTheOtherDay-tempValue{
+    font-size: 5rem;
+}
+.wrapper div {
+    border-radius: 5px;
+}
+.locationArea{
+    font-size: 2rem;
+    text-transform: uppercase;
+    width: 70%;
+    justify-content: space-between;
+    margin-top:2%;
+    display: flex;
+    color: #ffffff
+}
+.mapboxgl-map{
+    margin-right: 5%;
+    width: 80%;
+    height: 300px;
+}
+
+@media (max-width: 800px){
+    html{
+        font-size:15px;
+    }
+}
+
+
+@media (max-width: 720px){
+    html{
+        font-size:13px;
+    }
+    .weatherTheOtherDay{
+        width:70%;
+    }
+}
+
+@media (max-width: 600px){
+    html{
+        font-size:12px;
+    }
+    .currentWeather{
+        display:block;
+    }
+    .weatherTheOtherDay{
+        width:80%;
+    }
+    .titleBlock-city{
+        font-size: 3rem;
+    }
+}
+@media (max-width: 490){
+    html{
+        font-size:13px;
+    }
+    .titleBlock-city{
+        font-size: 2.6rem;
+    }
+}
+@media (max-width: 420px){
+    html{
+        font-size:13px;
+    }
+    .titleBlock-city{
+        font-size: 2.4rem;
+    }
+}
+@media (max-width: 360px){
+    html{
+        font-size:11px;
+    }
+    .titleBlock-city{
+        font-size: 2.4rem;
+    }
+}
